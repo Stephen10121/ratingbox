@@ -1,6 +1,5 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
-    import PrettyBox from './PrettyBox.svelte';
 
     export let selected = "5";
     export let ratingRange: string[] = ["1", "2", "3", "4", "5"];
@@ -14,7 +13,7 @@
 
 
 <div class="star-icon">
-    <img src="/icon-star.svg" alt="Star Icon">
+    <img src="{window.location.href}icon-star.svg" alt="Star Icon">
 </div>
 <h1>How did we do?</h1>
 <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering.</p>

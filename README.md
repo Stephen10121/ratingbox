@@ -1,2 +1,2 @@
 # Interactive Rating Component
-This challenge is from Frontend Mentor. I decided to use Svelte for this challenge because it's fun to use. I also used vanilla css for the project. you can find this repo hosted [here](https://small.gruzservices.com/ratingBox/).
+This challenge is from Frontend Mentor. I decided to use Svelte for this challenge because it's fun to use. I also used vanilla css for the project. you can find this repo hosted [here](https://stephen10121.github.io/ratingbox/).
