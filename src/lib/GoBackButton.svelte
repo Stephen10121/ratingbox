@@ -2,7 +2,7 @@
     import { fade } from 'svelte/transition';
 </script>
 
-<button on:click transition:fade title="Go Back"><img src="/arrow-left.svg" alt="Go Back Icon"></button>
+<button on:click transition:fade title="Go Back"><img src="/ratingbox/arrow-left.svg" alt="Go Back Icon"></button>
 
 <style>
     button {

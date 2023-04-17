@@ -6,7 +6,7 @@
 
 <PrettyBox centered>
     <div class="thanks-icon">
-        <img src="/illustration-thank-you.svg" alt="Thank you svg icon.">
+        <img src="/ratingbox/illustration-thank-you.svg" alt="Thank you svg icon.">
     </div>
     <div class="rating-given">
         <p>You selected {selected} out of 5</p>
