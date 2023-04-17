@@ -4,16 +4,14 @@
     export let selected: string | number;
 </script>
 
-<PrettyBox centered>
-    <div class="thanks-icon">
-        <img src="/ratingbox/illustration-thank-you.svg" alt="Thank you svg icon.">
-    </div>
-    <div class="rating-given">
-        <p>You selected {selected} out of 5</p>
-    </div>
-    <h1>Thank You!</h1>
-    <p class="darker">We appreciate you taking the time to give us a rating. If you ever need more support, don't hesitate to get in touch!</p>
-</PrettyBox>
+<div class="thanks-icon">
+    <img src="/illustration-thank-you.svg" alt="Thank you svg icon.">
+</div>
+<div class="rating-given">
+    <p>You selected {selected} out of 5</p>
+</div>
+<h1>Thank You!</h1>
+<p class="darker">We appreciate you taking the time to give us a rating. If you ever need more support, don't hesitate to get in touch!</p>
 
 <style>
     .thanks-icon {

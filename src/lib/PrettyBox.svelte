@@ -1,18 +1,20 @@
 <script lang="ts">
     export let centered = false;
+    export let heightPx: number = null;
 </script>
 
-<section style="{centered ? "align-items: center;" : ""}">
+<section style="{centered ? "align-items: center;" : ""}{heightPx ? `height: ${heightPx}px`:""}">
     <slot />
 </section>
 
 <style>
     section {
+        /* position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%); */
+        position: relative;
         width: 375px;
-        display: flex;
-        padding: 30px;
-        gap: 25px;
-        flex-direction: column;
         border-radius: 20px;
         background-image: radial-gradient(
             circle 449px at 50.5% -26%,

@@ -12,22 +12,21 @@
     }
 </script>
 
-<PrettyBox>
-    <div class="star-icon">
-        <img src="/ratingbox/icon-star.svg" alt="Star Icon">
+
+<div class="star-icon">
+    <img src="/icon-star.svg" alt="Star Icon">
+</div>
+<h1>How did we do?</h1>
+<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering.</p>
+<form on:submit|preventDefault = {() => dispatch("submit", selected)}>
+    <div class="buttons">
+        {#each ratingRange as ratingNumber}
+            <input class="sr-only" type="radio" on:change={onChange} name="optionratings" id="option{ratingNumber}" value={ratingNumber} checked={selected===ratingNumber} />
+            <label for="option{ratingNumber}">{ratingNumber}</label>
+        {/each}
     </div>
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering.</p>
-    <form on:submit|preventDefault = {() => dispatch("submit", selected)}>
-        <div class="buttons">
-            {#each ratingRange as ratingNumber}
-                <input class="sr-only" type="radio" on:change={onChange} name="optionratings" id="option{ratingNumber}" value={ratingNumber} checked={selected===ratingNumber} />
-                <label for="option{ratingNumber}">{ratingNumber}</label>
-            {/each}
-        </div>
-        <button>Submit</button>
-    </form>
-</PrettyBox>
+    <button>Submit</button>
+</form>
 
 <style>
     .star-icon {
@@ -83,11 +82,11 @@
     }
 
     .buttons label:hover {
-        background-color: hsl(216, 12%, 54%);
+        background-color: hsl(25, 97%, 53%);
     }
 
     .buttons input:checked + label {
-        background-color: hsl(25, 97%, 53%);
+        background-color: hsl(216, 12%, 54%);
     }
 
     button {
